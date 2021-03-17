@@ -38,12 +38,20 @@ Op het web weet je niet goed welke devices/systemen jouw website draaien, waardo
 Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-minor-web/browser-technologies-2021/blob/master/course/Usecase-score-website.md).
 
 * Admin interface waar je een wedstrijd kunt aanmaken
-* Per wedstrrijd moet de admin scores of tijden kunnen invullen
+* Per wedstrijd moet de admin scores of tijden kunnen invullen
 * Gebruikers moeten zich kunnen aanmelden voor bepaalde wedstrijden (overzichtsscherm)
 * Gebruikers die een wedstrijd volgen, krijgen een notificatie als er nieuwe informatie binnenkomt. (Hoe doe je dit als de gebruiker meerdere wedstrijden volgt?)
+   * _Moet het echt een **push notificatie** zijn? Firebase?_
 * Gebruikers kunnen hier een reactie op geven, die voor andere gebruikers (en de admin) te lezen is. De admin moet reacties kunnen weghalen.
 
 **Browser technologies**  
+* [Fetch browser API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) voor profile images?
+* Censuur? Spam reacties onderscheppen
 * Realtime reacties ontvangen
 * Realtime wedstrijd data
-* 
+* [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API). Service workers for [notifications](https://notifications.spec.whatwg.org/)
+* [IndexedDB](https://hacks.mozilla.org/2012/02/storing-images-and-files-in-indexeddb/) for maybe backup user data?
+* Cache voor snelle website speed en niet hoeven te fectchen elke keer, of gaat dit sws via de server?
+* [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) for pleasurable layer
+* LocalStorage en/of sessions voor dingen zoals wishlist?

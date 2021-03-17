@@ -48,7 +48,7 @@ Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-mi
 * [Fetch browser API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) voor profile images?
 * Censuur? Spam reacties onderscheppen
-* Realtime reacties ontvangen
+* Realtime reacties ontvangen. Websockets of [Server side events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
 * Realtime wedstrijd data
 * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API). Service workers for [notifications](https://notifications.spec.whatwg.org/)
 * [IndexedDB](https://hacks.mozilla.org/2012/02/storing-images-and-files-in-indexeddb/) for maybe backup user data?

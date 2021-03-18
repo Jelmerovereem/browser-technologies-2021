@@ -58,7 +58,7 @@ Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-mi
 
 **Hierarchy of User Needs**  
 Functional:
-* core functie; wedstrijd toevoegen en zien als users
+* core functie; wedstrijd toevoegen en zien als bezoekers
 
 Reliable:
 * met login systeempje

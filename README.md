@@ -44,7 +44,7 @@ Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-mi
    * _Moet het echt een **push notificatie** zijn? Firebase?_
 * Gebruikers kunnen hier een reactie op geven, die voor andere gebruikers (en de admin) te lezen is. De admin moet reacties kunnen weghalen.
 
-**Browser technologies**  
+**Browser technologies/Enhancements**  
 * [Fetch browser API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) voor profile images?
 * Censuur? Spam reacties onderscheppen

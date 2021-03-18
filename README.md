@@ -55,3 +55,16 @@ Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-mi
 * Cache voor snelle website speed en niet hoeven te fectchen elke keer, of gaat dit sws via de server?
 * [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) for pleasurable layer
 * LocalStorage en/of sessions voor dingen zoals wishlist?
+
+**Hierarchy of User Needs**  
+Functional:
+* core functie; wedstrijd toevoegen en zien als users
+
+Reliable:
+* met login systeempje
+
+Usable:
+* content op logische manier neergezet
+
+Pleasurable:
+* leuke extra'tjes zoals animaties en besturing

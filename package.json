@@ -1,0 +1,33 @@
+{
+  "name": "sportscore",
+  "version": "1.0.0",
+  "description": "A website where you can view matches and comment. With admin dashboard to add matches.",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jelmerovereem/browser-technologies-2021.git"
+  },
+  "author": "Jelmer Overeem <jelmer_overeem@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jelmerovereem/browser-technologies-2021/issues"
+  },
+  "homepage": "https://github.com/Jelmerovereem/browser-technologies-2021#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.5",
+    "node-fetch": "^2.6.1",
+    "uuid": "^8.3.2"
+  }
+}

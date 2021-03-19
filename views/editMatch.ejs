@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit match</title>
+</head>
+<body>
+	<%- include("partials/nav") %>
+	<main>
+		<h1>Edit match</h1>
+		<form action="/editMatch" method="POST">
+			<input type="hidden" name="matchId" value="<%= match.id %>">
+			<label for="dateTime">Date and time</label>
+			<input type="datetime-local" name="dateTime" id="dateTime" value="<%= match.dateTime %>" required>
+			<fieldset>
+				<label for="team1">Team 1</label>
+				<select name="team1" id="team1" value="<%= match.team1 %>" required>
+					<option value="Real Madrid">Real Madrid</option>
+					<option value="FC Barcelona">FC Barcelona</option>
+				</select>
+				<label for="team1-score">Team 1 score</label>
+				<input type="number" name="team1Score" min="0" step="1" id="team1-score" value="<%= match.team1Score %>" required>
+			</fieldset>
+			<fieldset>
+				<label for="team2">Team 2</label>
+				<select name="team2" id="team2" value="<%= match.team2 %>" required>
+					<option value="Real Madrid">Real Madrid</option>
+					<option value="FC Barcelona">FC Barcelona</option>
+				</select>
+				<label for="team2-score">Team 2 score</label>
+				<input type="number" name="team2Score" min="0" step="1" id="team2-score" value="<%= match.team2Score %>" required>
+			</fieldset>
+			<label for="match-description">Description</label>
+			<textarea name="matchDescription" id="match-description" cols="30" rows="10" value="<%= match.matchDescription %>"></textarea>
+			<button type="submit">Save</button>
+		</form>
+		<% match.comments.forEach(function(comment) { %>
+			<p>User: <%= comment.userName %></p>
+			<p>Comment: <%= comment.commentText %></p>
+			<span><%= comment.datePosted %></span>
+			<form action="/removeComment" method="POST">
+				<input type="hidden" value="<%= match.id %>" name="matchId">
+				<input type="hidden" value="<%= comment.id %>" name="commentId">
+				<button type="submit">Remove</button>
+			</form>
+		<% }) %>
+	</main>
+</body>
+</html>

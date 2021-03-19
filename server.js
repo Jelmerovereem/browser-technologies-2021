@@ -37,6 +37,7 @@ export let db;
 
 mongo.MongoClient.connect(url, (err, client) => {
 	if (err) {
+		console.log(err)
 		console.log("Error, database connection failed");
 	} else {
 		console.log("database connection succeeded");

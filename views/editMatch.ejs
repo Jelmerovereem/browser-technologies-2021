@@ -45,6 +45,10 @@
 				<button type="submit">Remove</button>
 			</form>
 		<% }) %>
+		<form action="/removeMatch" method="POST">
+			<input type="hidden" value="<%= match.id %>" name="matchId">
+			<button type="submit">Delete match</button>
+		</form>
 	</main>
 </body>
 </html>

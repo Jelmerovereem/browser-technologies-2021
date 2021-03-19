@@ -2,6 +2,7 @@ import { app } from "../../server.js";
 import authAndRespond from "../authAndRespond.js";
 import addMatch from "../addMatch.js";
 import editMatch from "../editMatch.js";
+import removeMatch from "../removeMatch.js";
 import postComment from "../postComment.js";
 import userLogin from "../userLogin.js";
 import postNewUser from "../postNewUser.js";
@@ -12,6 +13,7 @@ export default function posts() {
 		.post("/postAdminLogin", authAndRespond)
 		.post("/addMatch", addMatch)
 		.post("/editMatch", editMatch)
+		.post("/removeMatch", removeMatch)
 		.post("/addComment", postComment)
 		.post("/postUserLogin", userLogin)
 		.post("/postCreateUser", postNewUser)

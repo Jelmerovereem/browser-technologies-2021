@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<%- include("partials/userNav") %>
+	<main>
+		<h1><%= match.team1 %> <%= match.team1Score %> - <%= match.team2Score %> <%= match.team2 %></h1>
+		<p><%= match.dateTime %></p>
+		<p>Description: <%= match.matchDescription %></p>
+		<form action="/addComment" method="POST">
+			<input type="hidden" name="matchId" value="<%= match.id %>">
+			<label for="comment">Comment:</label>
+			<textarea name="userComment" id="comment" cols="30" rows="10"></textarea>
+			<label for="anonymous">Anonymous?</label>
+			<input type="checkbox" id="anonymous" name="anonymous">
+			<button type="submit">Reply</button>
+		</form>
+		<% match.comments.forEach(function(comment) { %>
+			<p>User: <%= comment.userName %></p>
+			<p>Comment: <%= comment.commentText %></p>
+			<span><%= comment.datePosted %></span>
+		<%	}) %>
+	</main>
+</body>
+</html>

@@ -51,7 +51,7 @@ Admins moeten wedstrijden kunnen aanmaken met scores of tijden. En gebruikers mo
 **UX WIREFLOW**  
 [Prototype](https://www.figma.com/proto/6ZRVGYly7jkgtJvAlye8fT/Sportwedstrijd-scores-Browser-Technologies?node-id=1%3A230&viewport=1032%2C318%2C0.7111635804176331&scaling=scale-down)  
 User side wireflow  
-![User side wireflow](https://user-images.githubusercontent.com/58043913/112283948-f774cd00-8c88-11eb-8939-f1484439f8af.png)  
+![User side wireflow](https://user-images.githubusercontent.com/58043913/112284341-6ce09d80-8c89-11eb-9373-db10d3e14e88.png)  
 Admin side wireflow  
 ![Admin side wireflow](https://user-images.githubusercontent.com/58043913/112284046-12dfd800-8c89-11eb-90a2-039d682df89f.png)
 

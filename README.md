@@ -33,9 +33,13 @@ Op het web weet je niet goed welke devices/systemen jouw website draaien, waardo
 
 
 ## Eindopdracht
+Live versie: [https://sportscore-bt.herokuapp.com/](https://sportscore-bt.herokuapp.com/)
 
 ### Use case
 Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-minor-web/browser-technologies-2021/blob/master/course/Usecase-score-website.md).
+
+**Core functionaliteit**  
+Admins moeten wedstrijden kunnen aanmaken met scores of tijden. En gebruikers moeten deze kunnen zien en reacties op geven.
 
 * Admin interface waar je een wedstrijd kunt aanmaken
 * Per wedstrijd moet de admin scores of tijden kunnen invullen
@@ -43,6 +47,13 @@ Ik heb gekozen voor de [Sportwedstrijd score website](https://github.com/cmda-mi
 * Gebruikers die een wedstrijd volgen, krijgen een notificatie als er nieuwe informatie binnenkomt. (Hoe doe je dit als de gebruiker meerdere wedstrijden volgt?)
    * _Moet het echt een **push notificatie** zijn? Firebase?_
 * Gebruikers kunnen hier een reactie op geven, die voor andere gebruikers (en de admin) te lezen is. De admin moet reacties kunnen weghalen.
+
+**UX WIREFLOW**  
+[Prototype](https://www.figma.com/proto/6ZRVGYly7jkgtJvAlye8fT/Sportwedstrijd-scores-Browser-Technologies?node-id=1%3A230&viewport=1032%2C318%2C0.7111635804176331&scaling=scale-down)  
+User side wireflow  
+![User side wireflow](https://user-images.githubusercontent.com/58043913/112283948-f774cd00-8c88-11eb-8939-f1484439f8af.png)  
+Admin side wireflow  
+![Admin side wireflow](https://user-images.githubusercontent.com/58043913/112284046-12dfd800-8c89-11eb-90a2-039d682df89f.png)
 
 **Browser technologies/Enhancements**  
 * [Fetch browser API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
@@ -68,3 +79,10 @@ Usable:
 
 Pleasurable:
 * leuke extra'tjes zoals animaties en besturing
+
+**Browsers waar ik op ga testen**  
+* Chrome (& op mobiel)
+* Firefox (& op mobiel)
+* Microsoft Edge
+* Default mobiele browser
+* Android webview

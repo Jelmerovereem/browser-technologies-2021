@@ -4,6 +4,8 @@ dotenv.config();
 import express from "express";
 import session from "express-session";
 
+import { networkInterfaces } from "os";
+
 import {default as mongo} from "mongodb";
 
 import bodyParser from "body-parser";
@@ -46,4 +48,19 @@ mongo.MongoClient.connect(url, (err, client) => {
 });
 
 const port = process.env.PORT || 4000;
-app.listen(port, () => console.log(`server is running on port ${port}`));
+app.listen(port, () => {
+	const nets = networkInterfaces();
+	const results = Object.create({});
+	for (const name of Object.keys(nets)) {
+		for (const net of nets[name]) {
+			if (net.family === "IPv4" && !net.internal) {
+				if (!results[name]) {
+					results[name] = [];
+				}
+				results[name].push(net.address);
+			}
+		}
+	}
+	const ipstring = `${results.wifi0[0]}:${port}`;
+	console.log(`server is running on localhost:${port} and on ${ipstring}`);
+});

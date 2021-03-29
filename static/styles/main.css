@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Helvetica; /*https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+}
+
+main {
+	margin: 8px;
+}
+
+h1 {
+	margin: 0.67em;
+}
+
+h2 {
+	margin-bottom: 0.83em;
+}
+
+.matchesContainer {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+.matchesContainer a {
+	text-decoration: none;
+}
+
+.matchesContainer section {
+	border: 1px solid lightgrey;
+	margin-bottom: .5em;
+	color: black;
+	padding: 1em;
+}
+
+.matchesContainer section:hover {
+	border: 1px solid grey;
+}
+
+.matchesContainer h2 {
+	font-weight: lighter;
+}
+
+.matchForm>fieldset, .scoreContainer {
+	display: flex;
+	justify-content: center;
+	/*width: 80%;*/
+	margin: auto;
+}
+
+.matchForm>fieldset>fieldset, .scoreContainer>section {
+	margin: auto;
+}
+
+.teamScore {
+	border: none;
+	font-size: 2em;
+	display: inline-block;
+	width: 2em;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.scoreDivider {
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+#match-description {
+	display: block;
+	width: 100%;
+	border: 2px solid lightgrey;
+	font-family: Helvetica;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.comments {
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.comment {
+	position: relative;
+	display: flex;
+	margin: 20px 0;
+}
+
+.comment>div {
+	margin: 0 5px;
+}
+
+.commentUser {
+	font-weight: bold;
+}
+
+.comment p {
+	margin: 0 0 10px 0;
+}
+
+.userAvatar {
+	display: block;
+	background: grey;
+	width: 30px;
+	height: 30px;
+	border-radius: 10%;
+}
+
+.commentLabel {
+	display: none;
+}
+
+.commentDate {
+	font-size: .7em;
+	color: lightgrey;
+}

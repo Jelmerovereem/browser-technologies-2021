@@ -4,26 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<%- include("partials/userHead") %>
 </head>
 <body>
 	<%- include("partials/userNav") %>
 	<main>
 		<h1><%= match.team1 %> <%= match.team1Score %> - <%= match.team2Score %> <%= match.team2 %></h1>
 		<p><%= match.dateTime %></p>
-		<p>Description: <%= match.matchDescription %></p>
-		<form action="/addComment" method="POST">
+		<article class="scoreContainer">
+			<section>
+				<div>
+					<span class="teamScore"><%= match.team1Score %></span>
+				</div>
+				<div>
+					<span><%= match.team1 %></span>
+				</div>
+			</section>
+			<span class="scoreDivider">-</span>
+			<section>
+				<div>
+					<span class="teamScore"><%= match.team2Score %></span>
+				</div>
+				<div>
+					<span><%= match.team2 %></span>
+				</div>
+			</section>
+		</article>
+		<p class="descriptionLabel">Description</p>
+		<p id="match-description"><%= match.matchDescription %></p>
+		<form action="/addComment" method="POST" class="addCommentForm">
 			<input type="hidden" name="matchId" value="<%= match.id %>">
 			<label for="comment">Comment:</label>
-			<textarea name="userComment" id="comment" cols="30" rows="10"></textarea>
-			<label for="anonymous">Anonymous?</label>
-			<input type="checkbox" id="anonymous" name="anonymous">
-			<button type="submit">Reply</button>
+			<div class="commentContainer">
+				<textarea name="userComment" id="comment" cols="30" rows="4"></textarea>
+				<div class="commentBottom">
+					<input type="checkbox" id="anonymous" name="anonymous">
+					<label for="anonymous">Anonymous?</label>
+					<button type="submit">Reply</button>
+				</div>
+			</div>
 		</form>
-		<% match.comments.forEach(function(comment) { %>
-			<p>User: <%= comment.userName %></p>
-			<p>Comment: <%= comment.commentText %></p>
-			<span><%= comment.datePosted %></span>
-		<%	}) %>
+		<article class="comments">
+			<% match.comments.forEach(function(comment) { %>
+				<section class="comment">
+					<div>
+						<div class="userAvatar"></div>
+					</div>
+					<div>
+						<p class="commentUser"><span class="commentLabel">User: </span><%= comment.userName %> <span class="commentDate"><%= comment.datePosted %></span></p>
+						<p><span class="commentLabel">Comment: </span><%= comment.commentText %></p>
+					</div>
+				</section>
+			<%	}) %>
+		</article>
 	</main>
 </body>
 </html>

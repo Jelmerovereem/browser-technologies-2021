@@ -1,0 +1,150 @@
+/* Login page */
+
+.profilePic {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: grey;
+	margin: auto;
+	border-radius: 50%;
+	margin-top: 5%;
+}
+
+.adminLoginForm {
+	display: block;
+	width: 80%;
+	margin: 5% auto;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.adminLoginForm input {
+	display: block;
+	margin: 0 auto 2em auto;
+	border: 1px solid lightgrey;
+	padding: 10px 20px 10px 5px;
+}
+
+.adminLoginForm input:invalid {
+	border: 1px solid red;
+}
+
+.username-err, .password-err {
+	display: block;
+	font-size: .8em;
+}
+
+.adminLoginForm input#userName:valid ~ .username-err {
+	display: none;
+}
+
+.adminLoginForm input#password:valid ~ .password-err {
+	display: none;
+}
+
+.adminLoginForm button {
+	color: white;
+	background: #285108;
+	padding: 10px 30px;
+	border: none;
+	font-size: 1.3em;
+}
+
+/* End login page */
+
+/* Dashboard page */
+
+.floatAddMatch {
+	content: "+";
+	color: white;
+	background: #285108;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	padding: 1em;
+	z-index: 1;
+}
+
+.floatAddMatch:hover {
+	background: #142a04;
+}
+
+/* End dashboard page */
+
+/* Add & edit match page */
+
+.matchForm {
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+.matchForm #dateTime {
+	display: block;
+	margin-bottom: 2em;
+}
+
+.matchForm fieldset {
+	border: none;
+}
+
+label[for="team1-score"], label[for="team2-score"] {
+	display: none;
+}
+
+.matchForm>fieldset>fieldset select {
+	display: block;
+}
+
+label[for="match-description"] {
+
+}
+
+.matchForm button {
+	display: block;
+	color: white;
+	background: #285108;
+	border: none;
+	padding: 15px 20px;
+	width: 50%;
+	font-size: 1.3em;
+	margin: auto;
+	margin-top: 7em;
+	cursor: pointer;
+}
+
+.matchForm button:hover {
+	background: #142a04;
+}
+
+.removeMatch {
+	position: fixed;
+	bottom: 1em;
+	right: 9em;
+	color: white;
+	background: red;
+	padding: 1em;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.removeMatch:hover {
+	background: #ba0000;
+}
+
+.commentRemove {
+	position: absolute;
+	right: 10px;
+	background: none;
+	border: none;
+	color: lightgrey;
+	cursor: pointer;
+}
+
+.commentRemove:hover {
+	color: #d24242;
+}
+
+/* End add & edit match page */

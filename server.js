@@ -61,6 +61,7 @@ app.listen(port, () => {
 			}
 		}
 	}
-	const ipstring = `${results.wifi0[0]}:${port}`;
+	let ipstring;
+	results.wifi0 ? ipstring = `${results.wifi0[0]}:${port}` : "...IPv4 not available...";
 	console.log(`server is running on localhost:${port} and on ${ipstring}`);
 });

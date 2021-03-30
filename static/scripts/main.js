@@ -5,14 +5,14 @@ window.onload = () => {
 
 	allMatches.forEach((el) => {
 		let followEl = document.createElement("a"); // create element
-		followEl.innerHTML = `<img src="assets/bookmark.svg" alt="">`;
+		followEl.innerHTML = `<img src="assets/bookmark.svg" width="15" height="15" alt="">`;
 		followEl.href = "javascript:void(0)";
 		followEl.classList.add("followMatch"); // add class styling
 		const matchid = el.dataset.matchid; // get matchid
 		if (localStorage.getItem("followedMatches")) { // check if localstorage object is present
 			const fMatches = JSON.parse(localStorage.getItem("followedMatches")); // get followed matches
 			if (fMatches.indexOf(matchid) != -1) { // check if matchid is present in followed matches
-				followEl.innerHTML = `<img src="assets/bookmarked.svg" alt="">`;
+				followEl.innerHTML = `<img src="assets/bookmarked.svg" width="15" height="15" alt="">`;
 				//followEl.innerText = "Followed"; // change text
 				followEl.classList.add("followed"); // add followed class
 			}
@@ -21,18 +21,18 @@ window.onload = () => {
 		followEl.addEventListener("click", () => {
 			if (!localStorage.getItem("followedMatches")) { // check if localstroage object exists
 				localStorage.setItem("followedMatches", JSON.stringify([matchid])); // create localstorage
-				followEl.innerHTML = `<img src="assets/bookmarked.svg" alt="">`;
+				followEl.innerHTML = `<img src="assets/bookmarked.svg" width="15" height="15" alt="">`;
 				followEl.classList.add("followed");
 			} else {
 				const followedMatches = JSON.parse(localStorage.getItem("followedMatches")); // get followed matches
 				if (followedMatches.indexOf(matchid) == -1) { // if match is not present
 					followedMatches.push(matchid); // add
-					followEl.innerHTML = `<img src="assets/bookmarked.svg" alt="">`;
+					followEl.innerHTML = `<img src="assets/bookmarked.svg" width="15" height="15" alt="">`;
 					followEl.classList.add("followed");
 				} else { // if present
 					const index = followedMatches.indexOf(matchid);
 					followedMatches.splice(index, 1); // remove from localstorage
-					followEl.innerHTML = `<img src="assets/bookmark.svg" alt="">`;
+					followEl.innerHTML = `<img src="assets/bookmark.svg" width="15" height="15" alt="">`;
 					followEl.classList.remove("followed");
 				}
 				localStorage.setItem("followedMatches", JSON.stringify(followedMatches)); // update localstorage

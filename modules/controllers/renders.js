@@ -38,7 +38,6 @@ async function renderEditMatch(req, res) {
 	} else {
 		const matchId = req.params.matchId;
 		const match = await db.collection("matches").findOne({id: matchId});
-		console.log(match);
 		res.render("editMatch.ejs", {
 			match
 		})

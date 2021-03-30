@@ -18,5 +18,11 @@
 		<span class="password-err">Please fill in your password</span>
 		<button type="submit">Log in</button>
 	</form>
+	<form action="/postAdminCode" method="POST" class="adminCodeForm">
+		<p>Disabled cookies? Use code to log in</p>
+		<label for="adminCode">Code</label>
+		<input type="text" id="adminCode" name="adminCode" required>
+		<button type="submit">Send</button>
+	</form>
 </body>
 </html>

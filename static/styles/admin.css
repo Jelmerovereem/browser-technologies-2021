@@ -10,7 +10,7 @@
 	margin-top: 5%;
 }
 
-.adminLoginForm {
+.adminLoginForm, .adminCodeForm {
 	display: block;
 	width: 80%;
 	margin: 5% auto;
@@ -48,6 +48,23 @@
 	padding: 10px 30px;
 	border: none;
 	font-size: 1.3em;
+}
+
+.adminCodeForm input {
+	display: block;
+	margin: 5px auto;
+}
+
+.adminCodeForm button {
+	padding: 10px 20px;
+	cursor: pointer;
+	color: black;
+	background: white;
+	border: 1px solid #285108;
+}
+
+.adminCodeForm button:hover {
+	background: lightgrey;
 }
 
 /* End login page */

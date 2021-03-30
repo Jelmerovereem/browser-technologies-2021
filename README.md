@@ -84,5 +84,4 @@ Pleasurable:
 * Chrome (& op mobiel)
 * Firefox (& op mobiel)
 * Microsoft Edge
-* Default mobiele browser
 * Android webview

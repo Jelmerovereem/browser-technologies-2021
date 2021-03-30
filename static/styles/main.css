@@ -125,3 +125,16 @@ h2 {
 	font-size: .7em;
 	color: lightgrey;
 }
+
+.signoutBtn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+.signoutBtn:hover {
+	text-decoration: underline;
+}

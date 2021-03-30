@@ -48,6 +48,11 @@
 	padding: 10px 30px;
 	border: none;
 	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.adminLoginForm button:hover {
+	background: #142a04;
 }
 
 .adminCodeForm input {

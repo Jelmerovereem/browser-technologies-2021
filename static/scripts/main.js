@@ -21,6 +21,8 @@ window.onload = () => {
 		followEl.addEventListener("click", () => {
 			if (!localStorage.getItem("followedMatches")) { // check if localstroage object exists
 				localStorage.setItem("followedMatches", JSON.stringify([matchid])); // create localstorage
+				followEl.innerHTML = `<img src="assets/bookmarked.svg" alt="">`;
+				followEl.classList.add("followed");
 			} else {
 				const followedMatches = JSON.parse(localStorage.getItem("followedMatches")); // get followed matches
 				if (followedMatches.indexOf(matchid) == -1) { // if match is not present

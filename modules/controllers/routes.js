@@ -1,5 +1,5 @@
 import { app } from "../../server.js";
-import { renderAdminDashboard, renderAdminLogin, adminSignout, renderAddmatch, renderUserHome, renderEditMatch, renderUserMatch, renderProfile, userSignout } from "./renders.js";
+import { renderAdminDashboard, renderAdminLogin, adminSignout, renderAddmatch, renderUserHome, renderEditMatch, renderMyMatches, renderUserMatch, renderProfile, userSignout } from "./renders.js";
 
 export default function routes() {
 	app
@@ -9,6 +9,7 @@ export default function routes() {
 		.get("/admin/editMatch/:matchId", renderEditMatch)
 		.get("/adminSignout", adminSignout)
 		.get("/", renderUserHome)
+		.get("/myMatches", renderMyMatches)
 		.get("/match/:matchId", renderUserMatch)
 		.get("/profile", renderProfile)
 		.get("/userSignout", userSignout)

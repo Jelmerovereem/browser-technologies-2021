@@ -57,6 +57,13 @@ async function renderUserHome(req, res) {
 	})
 }
 
+async function renderMyMatches(req, res) {
+	const matches = await db.collection("matches").find().toArray();
+	res.render("myMatches.ejs", {
+		matches
+	})
+}
+
 async function renderUserMatch(req, res) {
 	const matchId = req.params.matchId;
 	const match = await db.collection("matches").findOne({id: matchId});
@@ -81,4 +88,4 @@ function userSignout(req, res) {
 	res.redirect("/profile");
 }
 
-export { renderAdminLogin, renderAdminDashboard, adminSignout, renderAddmatch, renderUserHome, renderEditMatch, renderUserMatch, renderProfile, userSignout }
+export { renderAdminLogin, renderAdminDashboard, adminSignout, renderAddmatch, renderUserHome, renderEditMatch, renderMyMatches, renderUserMatch, renderProfile, userSignout }

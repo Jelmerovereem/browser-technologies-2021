@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My matches</title>
+	<script defer>
+		const matches = <%- JSON.stringify(matches) %>;
+	</script>
+	<script src="scripts/myMatches.js" defer></script>
+	<%- include("partials/userHead") %>
+</head>
+<body>
+	<%- include("partials/userNav") %>
+	<h1>My Matches</h1>
+	<% matches.forEach(function(match) { %>
+		<span class="matchSpan" data-matchid="<%= match.id %>"></span>
+	<% }) %>
+	<article class="matchesContainer"></article>
+</body>
+</html>

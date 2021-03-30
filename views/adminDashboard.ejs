@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Matches</title>
+	<script src="scripts/changeDate.js" defer></script>
 	<%- include("partials/adminHead") %>
 </head>
 <body>
@@ -16,7 +17,7 @@
 				<a href="/admin/editMatch/<%= match.id %>">
 					<section>
 						<h2><%= match.team1 %> <%= match.team1Score %> - <%= match.team2Score %> <%= match.team2 %></h2>
-						<span><%= match.dateTime %></span>
+						<span class="dateTime"><%= match.dateTime %></span>
 						<span>Comments: <%= match.comments.length %></span>
 					</section>
 				</a>

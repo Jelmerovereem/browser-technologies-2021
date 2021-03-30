@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Profile - <%= profile.userName %></title>
 	<%- include("partials/userHead") %>
 </head>
 <body>
 	<%- include("partials/userNav") %>
+	<h1>Hi, <%= profile.userName %></h1>
+	<a href="/myMatches">Take me to my matches</a>
 	<form action="/userSignout">
 		<button type="submit" class="signoutBtn">Sign out</button>
 	</form>

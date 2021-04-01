@@ -113,7 +113,7 @@ Werkt naar toebehoren!
 Werkt naar toebehoren!  
 <img src="https://user-images.githubusercontent.com/58043913/113279243-2a4f3e80-92e3-11eb-8441-25681f592c1a.jpg" alt="test" height="500">
 
-# Extra notities voor mezelf
+# Extra notities voor mijzelf
 
 ## College Everything for the web
 Je website moet altijd werken. Wat er ook fout kan gaan, het moet blijven werken.

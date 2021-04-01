@@ -23,6 +23,7 @@ Browser technologies gaat over het maken van applicaties die toegankelijk zijn v
 
 ## Eindopdracht
 Live versie: [https://sportscore-bt.herokuapp.com/](https://sportscore-bt.herokuapp.com/)
+
 Admin(login met username: **admin**. Password: **admin**): [https://sportscore-bt.herokuapp.com/admin](https://sportscore-bt.herokuapp.com/admin)
 
 ### Use case
@@ -103,6 +104,34 @@ if (window.localStorage) {
 ## Testen
 Aan het aanvullen...
 
+### Chrome desktop - Windows 10
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113278335-1b1bc100-92e2-11eb-9dda-6a61f16d3dcc.png" alt="test" height="500">
+
+### Chrome mobiel - Android
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113278586-646c1080-92e2-11eb-821e-b48c8ad97e37.jpg" alt="test" height="500">
+
+### Firefox desktop - Windows 10
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113278706-85ccfc80-92e2-11eb-8bea-635e746648f6.png" alt="test" height="500">
+
+### Firefox mobiel - Android
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113278868-b90f8b80-92e2-11eb-8013-4a84ba94cca2.jpg" alt="test" height="500">
+
+### Safari mobiel - Iphone
+Werkt naar toebehoren!  
+Heb dit getest op de Iphone van een vriend. Helaas vergeten screenshots te maken... 
+
+### Microsoft Edge - Windows 10
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113279085-fffd8100-92e2-11eb-8fee-ceb98177a8fe.png" alt="test" height="500">
+
+### Android webview - Android
+Werkt naar toebehoren!  
+<img src="https://user-images.githubusercontent.com/58043913/113279243-2a4f3e80-92e3-11eb-8441-25681f592c1a.jpg" alt="test">
+
 # Extra notities voor mezelf
 
 ## College Everything for the web
@@ -128,3 +157,7 @@ Op het web weet je niet goed welke devices/systemen jouw website draaien, waardo
 * Cache voor snelle website speed en niet hoeven te fectchen elke keer, of gaat dit sws via de server?
 * [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) for pleasurable layer
 * LocalStorage en/of sessions voor dingen zoals wishlist?
+
+## License
+
+[MIT](LICENSE)

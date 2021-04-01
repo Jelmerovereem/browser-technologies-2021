@@ -1,23 +1,5 @@
 # SportScores (Browser Technologies @cmda-minor-web 20-21)
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
-
 ## Vak omschrijving
 Browser technologies gaat over het maken van applicaties die toegankelijk zijn voor (zover mogelijk) iedereen op het web.
 
@@ -102,8 +84,6 @@ if (window.localStorage) {
 ```
 
 ## Testen
-Aan het aanvullen...
-
 ### Chrome desktop - Windows 10
 Werkt naar toebehoren!  
 <img src="https://user-images.githubusercontent.com/58043913/113278335-1b1bc100-92e2-11eb-9dda-6a61f16d3dcc.png" alt="test" height="500">

@@ -31,6 +31,7 @@ Admins moeten wedstrijden kunnen aanmaken met scores of tijden. En gebruikers mo
 
 ## UX WIREFLOW
 ### Schetsen
+<img src="https://user-images.githubusercontent.com/58043913/113279692-b3ff0c00-92e3-11eb-844c-ff7bf1ecbbbe.jpg" alt="sketches" height="500">
 
 ### Lo-fi uitwerking
 [Prototype](https://www.figma.com/proto/6ZRVGYly7jkgtJvAlye8fT/Sportwedstrijd-scores-Browser-Technologies?node-id=1%3A230&viewport=1032%2C318%2C0.7111635804176331&scaling=scale-down)  
